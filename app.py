@@ -24,7 +24,7 @@ def db_create():
     """ Create a connection cursor that will allow us to execute SQL statements from inside of route """
     cur = conn.cursor()
     cur.execute('''
-        CREATE TABLE IF NOT EXISTS Basektball(
+        CREATE TABLE IF NOT EXISTS Basketball(
             First varchar(255), 
             Last varchar(255), 
             City varchar(255), 
