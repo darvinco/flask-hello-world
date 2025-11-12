@@ -32,6 +32,6 @@ def db_create():
             Number int
             ); 
     ''')
-    con.commit()
+    conn.commit()
     conn.close()
     return "Table created successfully!"
