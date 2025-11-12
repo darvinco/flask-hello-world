@@ -41,12 +41,12 @@ def inserting():
     conn = psycopg2.connect("postgresql://hello_world_wkh9_user:BULUeupbH97YGIOoiYBn1nxxGaBUIpXy@dpg-d4a2htidbo4c73c3lcd0-a/hello_world_wkh9")
     cur = conn.cursor()
     cur.execute('''
-        INSERT INTO Basketball(First, Last, City, Name, Number)
+        INSERT INTO Basketball (First, Last, City, Name, Number)
         Values
         ('Jayson', 'Tatum', 'Boston', 'Celtics', 0), 
         ('Stephen', 'Curry', 'San Francisco', 'Warriors', 30), 
         ('Nikola', 'Jokic', 'Denver', 'Nuggets', 15), 
-        ('Kawhi', 'Leonard', 'Los Angeles', Clippers', 2); 
+        ('Kawhi', 'Leonard', 'Los Angeles', 'Clippers', 2)
         ''')
     conn.commit()
     conn.close()
